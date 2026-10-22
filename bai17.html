@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="Bai17.css">
+</head>
+<body>
+
+    <div class="khung-form">
+        <form id="form-dang-ky" novalidate>
+
+            <h2>Đăng ký tài khoản</h2>
+            <p class="mo-ta">
+                Dữ liệu được kiểm tra bằng JavaScript trước khi gửi.
+            </p>
+
+            <div class="nhom-input">
+                <label for="ho-ten">Họ và tên</label>
+                <input type="text" id="ho-ten" placeholder="Nhập họ và tên">
+                <small class="thong-bao"></small>
+            </div>
+
+            <div class="nhom-input">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Nhập email">
+                <small class="thong-bao"></small>
+            </div>
+
+            <div class="nhom-input">
+                <label for="mat-khau">Mật khẩu</label>
+                <input type="password" id="mat-khau"
+                       placeholder="Nhập mật khẩu">
+                <small class="thong-bao"></small>
+            </div>
+
+            <div class="nhom-input">
+                <label for="xac-nhan">Xác nhận mật khẩu</label>
+                <input type="password" id="xac-nhan"
+                       placeholder="Nhập lại mật khẩu">
+                <small class="thong-bao"></small>
+            </div>
+
+            <button type="submit">Đăng ký</button>
+
+            <p id="ket-qua"></p>
+
+        </form>
+    </div>
+
+    <script src="Bai17.js"></script>
+</body>
+</html>

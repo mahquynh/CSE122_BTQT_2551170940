@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    background-color: #f5f6fa;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+.ung-dung {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.tieu-de {
+    padding: 18px 20px;
+    background-color: #6d28d9;
+    color: #ffffff;
+}
+
+.tieu-de h2 {
+    margin: 0 0 6px;
+    font-size: 22px;
+}
+
+.tieu-de p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #ede9fe;
+}
+
+
+.khu-vuc-nhap {
+    display: flex;
+    gap: 8px;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ede9fe;
+}
+
+.khu-vuc-nhap input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px 12px;
+    border: 1px solid #ddd6fe;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.khu-vuc-nhap input:focus {
+    border-color: #6d28d9;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+
+#nut-them {
+    padding: 10px 20px;
+    background-color: #6d28d9;
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+#nut-them:hover {
+    background-color: #5b21b6;
+}
+
+
+#danh-sach {
+    list-style: none;
+    margin: 0;
+    padding: 5px 20px;
+}
+
+
+.cong-viec {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px dotted #ede9fe;
+}
+
+
+.cong-viec input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #6d28d9;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+
+.ten-cong-viec {
+    flex: 1;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+
+.cong-viec.hoan-thanh .ten-cong-viec {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+
+.nut-xoa {
+    padding: 5px 10px;
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border-radius: 6px;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.nut-xoa:hover {
+    background-color: #fecaca;
+}
+
+.thong-ke {
+    padding: 15px 20px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+@media (max-width: 450px) {
+    .khu-vuc-nhap {
+        padding: 12px;
+    }
+
+    #danh-sach {
+        padding: 5px 12px;
+    }
+
+    .tieu-de {
+        padding: 16px;
+    }
+
+    #nut-them {
+        padding: 10px 14px;
+    }
+}

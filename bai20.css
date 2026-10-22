@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #101416;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+.ung-dung {
+    width: 100%;
+    max-width: 520px;
+    padding: 15px;
+    background-color: #101416;
+}
+
+.khung-anh {
+    width: 280px;
+    max-width: 100%;
+    min-height: 100px;
+    margin: 0 auto 15px;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: #1c2226;
+    text-align: center;
+}
+
+#hoa-hong {
+    display: block;
+    max-width: 100%;
+    max-height: 55px;
+    margin: 0 auto 8px;
+    object-fit: contain;
+    filter: grayscale(1);
+    transition: filter 0.3s, transform 0.3s, opacity 0.3s;
+}
+
+.loi-chuc {
+    color: #f4c542;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}
+
+.danh-sach-nut {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.nut {
+    padding: 6px 11px;
+    border: 1px solid #30383e;
+    border-radius: 6px;
+    background-color: #232b30;
+    color: #e5e7eb;
+    font-size: 11px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.nut:hover {
+    background-color: #374151;
+}
+
+.nut.active {
+    background-color: #1677ff;
+    border-color: #1677ff;
+    color: #ffffff;
+}
+
+.nut:active {
+    transform: scale(0.96);
+}
+
+.gray {
+    filter: grayscale(1);
+}
+
+.xray {
+    filter: grayscale(1) invert(1);
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.fliph {
+    transform: scaleX(-1);
+}
+
+.flipv {
+    transform: scaleY(-1);
+}
+
+.glow {
+    filter: drop-shadow(0 0 8px #f4c542);
+}
+
+.shadow {
+    filter: drop-shadow(3px 3px 3px #000000);
+}
+
+.bold-shadow {
+    filter: drop-shadow(5px 5px 2px #000000);
+}
+
+.dropshadow {
+    filter: drop-shadow(0 0 7px #e91e63);
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+.wave {
+    filter: url(#wave-filter);
+}
+
+.mask {
+    -webkit-mask-image: radial-gradient(ellipse, #000 35%, transparent 75%);
+    mask-image: radial-gradient(ellipse, #000 35%, transparent 75%);
+}
+
+.alpha {
+    opacity: 0.35;
+}
+
+.bo-loc-svg {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+@media (max-width: 450px) {
+    .ung-dung {
+        padding: 8px;
+    }
+
+    .khung-anh {
+        width: 100%;
+    }
+
+    .nut {
+        padding: 7px 9px;
+    }
+}

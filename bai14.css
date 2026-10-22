@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #222;
+    background-color: white;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    background-color: #2E7D32;
+    color: #FFEB3B;
+    text-align: center;
+    font-size: 24px;
+    padding: 15px;
+    margin: 0 0 20px;
+}
+
+.gioi-thieu {
+    color: #1b5e20;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 25px;
+}
+
+
+.danh-sach {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+
+.the {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.the img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.noi-dung {
+    padding: 12px;
+}
+
+
+.noi-dung h3 {
+    color: #2E7D32;
+    font-size: 15px;
+    margin: 0 0 8px;
+}
+
+
+.noi-dung p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+@media (max-width: 600px) {
+    .danh-sach {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .danh-sach {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,80 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    font-family: "Times New Roman", serif;
+    color: #222222;
+}
+
+.bai-viet {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flow-root;
+}
+
+.anh-doi-cat {
+    float: left;
+    width: 34%;
+    height: auto;
+    margin: 0 15px 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.noi-dung {
+    overflow: hidden;
+}
+
+h1 {
+    margin: 0 0 12px;
+    color: #c9a227;
+    font-size: 21px;
+    text-shadow: 2px 2px 3px #d8d8d8;
+}
+
+.khung-noi-dung {
+    padding: 10px;
+    border: 2px dashed #e07b00;
+    border-radius: 7px;
+}
+
+.khung-noi-dung p {
+    margin: 0 0 10px;
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.khung-noi-dung p:last-child {
+    margin-bottom: 0;
+}
+
+.tu-noi-bat {
+    color: #c62828;
+    font-weight: bold;
+}
+
+@media (max-width: 450px) {
+    .bai-viet {
+        padding: 5px;
+    }
+
+    .anh-doi-cat {
+        width: 35%;
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-size: 17px;
+    }
+
+    .khung-noi-dung {
+        padding: 8px;
+    }
+}

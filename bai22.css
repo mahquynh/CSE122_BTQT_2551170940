@@ -1,0 +1,140 @@
+:root {
+    --nen: #ffffff;
+    --chu: #172033;
+    --nen-the: #f1f5f9;
+    --vien: #dbe2ea;
+    --chu-phu: #475569;
+    --mau-nhan: #2563eb;
+}
+
+body.toi {
+    --nen: #0f172a;
+    --chu: #e2e8f0;
+    --nen-the: #1e293b;
+    --vien: #334155;
+    --chu-phu: #cbd5e1;
+    --mau-nhan: #60a5fa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--nen);
+    color: var(--chu);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.ung-dung {
+    width: 100%;
+    max-width: 520px;
+    padding: 10px;
+}
+
+.thanh-tieu-de {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.thanh-tieu-de h1 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--chu);
+}
+
+.the-thong-tin {
+    margin-bottom: 8px;
+    padding: 12px;
+    border: 1px solid var(--vien);
+    border-radius: 10px;
+    background-color: var(--nen-the);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.the-thong-tin h2 {
+    margin: 0 0 6px;
+    color: var(--mau-nhan);
+    font-size: 13px;
+}
+
+.the-thong-tin p {
+    margin: 0;
+    color: var(--chu-phu);
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.trang-thai {
+    margin: 12px 0 0;
+    color: var(--chu-phu);
+    font-size: 11px;
+}
+
+.cong-tac {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.cong-tac input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.nut-gat {
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    background-color: #94a3b8;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nut-gat::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 3px;
+    top: 3px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: transform 0.3s;
+}
+
+.cong-tac input:checked + .nut-gat {
+    background-color: #60a5fa;
+}
+
+.cong-tac input:checked + .nut-gat::before {
+    transform: translateX(20px);
+}
+
+.cong-tac input:focus-visible + .nut-gat {
+    outline: 2px solid var(--mau-nhan);
+    outline-offset: 3px;
+}
+
+@media (max-width: 450px) {
+    body {
+        padding: 12px;
+    }
+
+    .thanh-tieu-de h1 {
+        font-size: 16px;
+    }
+}

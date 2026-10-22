@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background-color: #fff7ed;
+    color: #374151;
+}
+
+
+.khung-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #fed7aa;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+h2 {
+    margin: 0 0 5px;
+    color: #c2410c;
+    font-size: 22px;
+}
+
+.mo-ta {
+    margin: 0 0 20px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+
+.nhom-input {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+}
+
+
+input:focus {
+    border-color: #f97316;
+}
+
+
+input.hop-le {
+    border: 1px solid #16a34a;
+    background-color: #ffffff;
+}
+
+input.khong-hop-le {
+    border: 1px solid #ef4444;
+    background-color: #fff1f2;
+}
+
+.thong-bao {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.thong-bao.dung {
+    color: #16a34a;
+}
+
+.thong-bao.sai {
+    color: #dc2626;
+}
+
+
+button {
+    width: 100%;
+    padding: 11px;
+    margin-top: 3px;
+    border: none;
+    border-radius: 7px;
+    background-color: #c2410c;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9a3412;
+}
+
+/* Thông báo kết quả */
+#ket-qua {
+    margin: 12px 0 0;
+    font-size: 13px;
+    text-align: center;
+}
+
+#ket-qua.thanh-cong {
+    color: #16a34a;
+}
+
+#ket-qua that-bai {
+    color: #dc2626;
+}

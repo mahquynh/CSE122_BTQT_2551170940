@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 20px;
+    background-color: #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #222222;
+}
+.trang-web{
+    width: 510px;
+    min-height: 660px;
+    margin: 0 auto;
+    padding: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px #d5dce3;
+}
+.dau-trang{
+    height: 34px;
+    border-bottom: 2px solid #1671cf;
+    margin-bottom: 0;
+}
+.dau-trang h1{
+    margin: 0;
+    padding: 1px 10px 5px;
+    color: #0865c4;
+    font-size: 14px;
+    font-weight: bold;
+}
+.bo-cuc{
+    display: grid;
+    grid-template-columns: 102px 1fr;
+    min-height: 625px;
+}
+.menu-trai{
+    padding: 8px 7px;
+    background-color: #f4f8fc;
+    border-right: 1px solid #dce7f2;
+}
+.nhan-menu{
+    margin: 0 0 7px;
+    color: #777777;
+    font-size: 7px;
+    font-weight: bold;
+}
+.menu-trai ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-trai li{
+    margin-bottom: 5px;
+}
+.menu-trai a{
+    color: #1671cf;
+    text-decoration: none;
+    font-size: 9px;
+}
+.menu-trai a:hover{
+    text-decoration: underline;
+}
+.noi-dung{
+    min-widtj: 0;
+    padding: 12px 10px 0;
+}
+.chuyen-muc{
+    margin-bottom: 10px;
+}
+.tieu-de-muc{
+    margin: 0 0 4px;
+    padding: 3px 6px;
+    background-color: #1769b5;
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: bold;
+}
+.tin-tuc{
+    min-height: 83px;
+    padding: 5px 0;
+    border-bottom: 1px dotted #dce5ed;
+    overflow: auto;
+}
+.tin-tuc h3{
+    margin: 0 0 3px;
+    color: #0870cc;
+    font-size: 8px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.tin-tuc p{
+    margin: 0;
+    font-size: 7px;
+    line-height: 1.6;
+    text-align: left;
+}
+.tin-tuc img{
+    float: right;
+    width: 68px;
+    height: 68px;
+    margin: 0 0 4px 8px;
+    object-fit: cover;
+}
+.chuyen-muc:last-child{
+    margin-bottom: 0;
+}
+@media(max-width: 540px){
+    body{
+        padding: 8px;
+    }
+    .trang-web{
+        width: 100%
+    }
+    .bo-cuc{
+        grid-template-columns: 95px minmax(0, 1fr);
+    }
+    .noi-dung{
+        padding-right: 5px;
+        padding-left: 7px
+    }
+    .tin-tuc img{
+        width: 58px;
+        height: 58px
+    }
+}

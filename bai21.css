@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.trang-web {
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr) 160px;
+    grid-template-rows: auto 1fr;
+    max-width: 1000px;
+    min-height: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.banner {
+    grid-column: 1 / 4;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 36px;
+    padding: 8px 10px;
+    background-color: #c62828;
+    color: #ffffff;
+}
+
+.banner img {
+    width: 24px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu-doc {
+    min-height: 350px;
+    background: linear-gradient(to bottom, #c62828, #8e0000);
+}
+
+.menu-doc a {
+    display: block;
+    padding: 10px 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.menu-doc a:hover {
+    background-color: #8e0000;
+}
+
+.noi-dung {
+    padding: 12px 10px;
+    background-color: #ffffff;
+}
+
+.noi-dung h2 {
+    margin: 0 0 8px;
+    color: #c62828;
+    font-size: 14px;
+}
+
+.hop-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #ffe082;
+    color: #333333;
+    font-size: 10px;
+}
+
+.hop-gioi-thieu {
+    margin-top: 8px;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    color: #333333;
+}
+
+.hop-gioi-thieu > p {
+    margin: 0 0 12px;
+}
+
+.loi-chao {
+    text-align: center;
+}
+
+.loi-chao p {
+    margin: 2px 0;
+}
+
+.cot-quang-cao {
+    padding: 8px 5px;
+    background-color: #ffffff;
+}
+
+.cot-quang-cao img {
+    display: block;
+    width: 100%;
+    max-width: 160px;
+    min-height: 16px;
+    margin-bottom: 6px;
+    object-fit: contain;
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 10px;
+    }
+
+    .trang-web {
+        grid-template-columns: 150px minmax(0, 1fr);
+    }
+
+    .banner {
+        grid-column: 1 / 3;
+    }
+
+    .cot-quang-cao {
+        grid-column: 1 / 3;
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .cot-quang-cao img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 400px) {
+    .trang-web {
+        grid-template-columns: 1fr;
+    }
+
+    .banner,
+    .cot-quang-cao {
+        grid-column: 1;
+    }
+
+    .menu-doc {
+        min-height: auto;
+    }
+}

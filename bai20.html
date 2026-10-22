@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special For You</title>
+    <link rel="stylesheet" href="Bai20.css">
+</head>
+<body>
+    <div class="ung-dung">
+        <div class="khung-anh">
+            <img src="hoahong.gif" alt="Hoa hồng" id="hoa-hong">
+            <div class="loi-chuc">Special For You</div>
+        </div>
+
+        <div class="danh-sach-nut">
+            <button class="nut active" data-effect="gray">Gray</button>
+            <button class="nut" data-effect="xray">Xray</button>
+            <button class="nut" data-effect="invert">Invert</button>
+            <button class="nut" data-effect="fliph">FlipH</button>
+            <button class="nut" data-effect="flipv">FlipV</button>
+            <button class="nut" data-effect="glow">Glow</button>
+            <button class="nut" data-effect="shadow">Shadow</button>
+            <button class="nut" data-effect="bold-shadow">Bold Shadow</button>
+            <button class="nut" data-effect="dropshadow">DropShadow</button>
+            <button class="nut" data-effect="blur">Blur</button>
+            <button class="nut" data-effect="wave">Wave</button>
+            <button class="nut" data-effect="mask">Mask</button>
+            <button class="nut" data-effect="alpha">Alpha</button>
+        </div>
+    </div>
+
+    <svg class="bo-loc-svg" xmlns="http://www.w3.org/2000/svg">
+        <filter id="wave-filter">
+            <feTurbulence type="turbulence" baseFrequency="0.02 0.08" numOctaves="2" seed="2" result="noise"/>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="8"/>
+        </filter>
+    </svg>
+
+    <script src="Bai20.js"></script>
+</body>
+</html>
